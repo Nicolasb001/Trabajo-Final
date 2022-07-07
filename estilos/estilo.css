@@ -1,0 +1,659 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    padding: 0px 0 0;
+
+}
+
+/*HEADER*/
+.mi-header {
+    background-color: rgb(207, 46, 46);
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    max-width: 992px;
+    margin: 0 auto;
+}
+
+.nav-link {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+#logo img {
+    border-radius: 50%;
+    width: 20%;
+    padding: 0 9px;
+}
+
+.nav-menu {
+    display: flex;
+    margin-right: 40px;
+    list-style: none;
+}
+
+.nav-menu-item {
+    font-size: 18px;
+    margin: 0 10px;
+    line-height: 80px;
+    text-transform: uppercase;
+    width: max-content;
+}
+
+.nav-menu-link:hover {
+    background: rgb(255, 255, 0);
+    transition: 0.5s;
+    color: rgb(43, 43, 43);
+}
+
+.nav-menu-link {
+    padding: 0px 4px;
+}
+
+.nav-toggle {
+    color: rgb(0, 0, 0);
+    background: none;
+    border: none;
+    font-size: 30px;
+    padding: 0 20px;
+    line-height: 60px;
+    cursor: pointer;
+
+
+    display: none;
+}
+
+.submenu,
+.sb {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background: rgb(207, 46, 46);
+    padding-left: 10px;
+
+}
+
+/*CONTENIDO*/
+.titulo {
+    width: 100%;
+    margin-top: 80px;
+    text-align: center;
+    font-family: 'Baloo 2', cursive;
+    background-color: rgb(207, 46, 46);
+    border: 1px solid rgb(0, 0, 0);
+}
+
+#titulo-pr {
+    font-size: 60px;
+}
+
+.titulo p {
+    font-size: 20px;
+    color: #fff;
+}
+
+
+.cont-docentes{
+    display: flex;
+    width: 100%;
+    background-color: #fff;
+    margin: 0 0;
+    justify-content: center;
+    padding: 30px;
+    height: max-content;
+}
+.docentes{
+    width: 50%;
+    border: 10px solid rgb(207, 46, 46);
+}
+.docentes img{
+    width: 100%;
+    height: 550px;
+    padding: 0 10px;
+}
+.docentes2{
+    width: 50%;
+    border: 10px solid rgb(207, 46, 46);
+}
+.docentes2 img{
+    width: 100%;
+    height: 550px;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.title-proy {
+    background-color: rgb(207, 46, 46);
+    font-size: 30px;
+    font-family: 'Baloo 2';
+    color: #fff;
+    text-align: center;
+    margin: 0;
+}
+
+.cont-proyecto {
+    background-color: rgb(207, 46, 46);
+    display: flex;
+    width: 100%;
+    font-family: 'Baloo 2';
+}
+
+.cont-img-proy {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    margin: 0 10%;
+
+
+}
+
+.cont-img-proy img {
+    width: 10%;
+}
+
+.cont-img-proy p b {
+    font-size: 22px;
+    color: #fff;
+}
+
+.cont-img-proy p {
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+}
+
+
+
+
+.caja-principal {
+    width: 100%;
+    background: #dfdfdf;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.caja-1 p {
+    display: flex;
+    font-family: 'Baloo 2', cursive;
+    font-size: 50px;
+    color: rgb(156, 8, 8);
+    padding-top: 10px;
+}
+
+.caja-2 p {
+    font-family: 'Baloo 2', cursive;
+    font-size: 25px;
+}
+
+.caja-3 p {
+    font-family: 'Baloo 2', cursive;
+    font-size: 55px;
+    color: rgb(156, 8, 8);
+}
+
+.cont-caja4 {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    font-family: 'Baloo 2';
+    text-align: center;
+}
+
+.cont-caja4 p b {
+    font-size: 17px;
+    color: rgb(0, 0, 0);
+}
+
+.cont-caja4 p {
+    color: rgb(41, 41, 41);
+}
+.actividades{
+    text-align: center;
+    font-family: 'Baloo 2';
+    background-color: #fff;
+    width: 100%;}
+.actividades h4{
+font-size: 50px;
+}
+
+.cont-actividades{
+    background-color: #fff;
+    width: 100%;
+    display: flex;
+    font-family: 'Baloo 2';
+    justify-content: space-evenly;
+    text-align: center;
+}
+.cont-actividades p{
+    font-size: 17px;
+    line-height: 20px;
+}
+.cont-img-act{
+    margin: 10px;
+}
+
+
+
+
+
+.formulario {
+    width: 100%;
+    background-image: url("https://jardinamanecer.edu.ar/web/wp-content/uploads/2020/01/nimble_asset_fondo-amanecer2015-1024x602-1.jpg");
+    background-size: 100vw 60vh;
+    margin: 0;
+}
+
+.formulario form {
+    width: 450px;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    border-radius: 7px;
+}
+
+.formulario h2 {
+    color: rgb(28, 28, 28);
+    text-align: center;
+    margin: 0;
+    font-size: 30px;
+    font-family: 'Baloo 2';
+    margin-bottom: 20px;
+}
+
+.formulario input,
+textarea {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 17px;
+    font-family: 'Baloo 2';
+    border: none;
+}
+
+.formulario textarea {
+    min-height: 100px;
+    max-height: 200px;
+    max-width: 100%;
+}
+
+#botton {
+    background-color: rgb(207, 46, 46);
+    color: #fff;
+    padding: 20px;
+}
+
+#botton:hover {
+    background-color: rgb(240, 2, 2);
+}
+
+
+/*FOOTER*/
+footer {
+    width: 100%;
+}
+
+.pie-pagina {
+    background-color: rgb(48, 48, 48);
+}
+
+.pie-pagina .grupo-1 {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+}
+
+.pie-pagina .grupo-1 .caja iframe {
+    width: 75%;
+    height: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pie-pagina .grupo-1 .caja h2 {
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+
+.pie-pagina .grupo-1 .caja p {
+    color: #efefef;
+    margin-bottom: 10px;
+}
+
+.mail {
+    color: #fff;
+    text-decoration: none;
+}
+
+.mail:hover {
+    color: #000;
+
+}
+
+.pie-pagina .grupo-1 .red-social a {
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    margin-right: 10px;
+    background-color: #242424;
+    text-align: center;
+}
+
+.pie-pagina .grupo-1 .red-social a:hover {
+    color: #424242;
+}
+
+.pie-pagina .grupo-2 {
+    background-color: rgb(41, 41, 41);
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+}
+
+.pie-pagina .grupo-2 small {
+    font-size: 15px;
+}
+
+.jardin {
+    width: 100%;
+    height: 260px;
+
+}
+
+.images {
+    width: 100%;
+    height: 260px;
+
+}
+
+
+
+
+
+
+
+/*RESPONSIVE HEADER*/
+@media (max-width:760px) {
+    body {
+        padding-top: 70px;
+    }
+
+    .titulo {
+        border: 0px;
+        margin: 0px;
+        text-align: center;
+    }
+
+    #titulo-pr {
+        width: 100%;
+        font-size: 40px;
+    }
+
+    .mi-header {
+        height: 60px;
+    }
+
+    #logo img {
+        border-radius: 50%;
+        width: 20%;
+        padding: 0 9px;
+        justify-content: center;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+        align-items: center;
+        margin-right: 10px;
+        background-color: rgb(207, 46, 46);
+        position: fixed;
+        left: 0;
+        top: 60px;
+        width: 100%;
+        padding: 20px 0;
+        height: calc(100% - 60px);
+        overflow-y: auto;
+
+        left: 100%;
+        transition: left 0.3s;
+    }
+
+    .nav-menu-item {
+        line-height: 70px;
+    }
+
+    .nav-menu-link:hover,
+    .nav-menu-link_active {
+        background: none;
+        color: rgb(255, 255, 255);
+    }
+
+    .nav-menu-link {
+        padding: 1px 4px;
+        border-radius: 3px;
+    }
+
+    .nav-toggle {
+        display: block;
+
+    }
+
+    .nav-menu_visible {
+        left: 0;
+    }
+
+    .cont-proyecto {
+        flex-direction: column;
+    }
+
+    .cont-img-proy img {
+        width: 30%;
+    }
+
+    .formulario {
+        background-image: none;
+    }
+
+    .formulario form {
+        width: 300px;
+    }
+
+
+
+    .caja-1 p {
+        font-size: 50px;
+        text-align: center;
+    }
+
+    .caja-2 p {
+        font-size: 25px;
+        text-align: center;
+    }
+    .cont-docentes{
+        flex-direction: column;
+        width: 100%;
+
+    }
+    .docentes{
+        width: 100%;
+    }
+    .docentes img{
+        width: 100%;
+        height: 205px;
+        padding: 0 10px;
+    }
+    .docentes2{
+        width: 100%;
+    }
+    .docentes2 img{
+        width: 100%;
+        height: 205px;
+        
+    }
+
+}
+
+@media (min-width:768px) {
+    #logo img {
+        width: 50%;
+        margin-top: 7px;
+    }
+    .nav-menu-link:hover,
+    .nav-menu-link_active {
+        background: none;
+        color: rgb(255, 255, 255);
+    }
+
+    .cont-img-proy img {
+        width: 30%;
+    }
+
+
+    .caja-1 p {
+        font-size: 50px;
+        text-align: center;
+    }
+
+    .caja-2 p {
+        font-size: 25px;
+        text-align: center;
+    }
+}
+.cont-docentes{
+    flex-direction: column;
+    width: 100%;
+}
+.docentes{
+    width: 100%;
+}
+.docentes2{
+    width: 100%;
+}
+
+@media (min-width:1024px) {
+    #logo img {
+        width: 20%;
+        margin: 0;
+    }
+
+    .container-submenu {
+        position: relative;
+    }
+
+    .submenu {
+        overflow: visible;
+        position: absolute;
+        top: 80px;
+        z-index: 1000;
+        opacity: 0;
+        visibility: hidden;
+        padding: 0;
+    }
+
+    .sb {
+        width: 200px;
+        text-align: center;
+    }
+
+    .sb:hover {
+        background: rgb(255, 89, 89);
+    }
+
+    .container-submenu:hover .submenu {
+        opacity: 1;
+        visibility: visible;
+    }
+    .cont-img-proy img {
+        width: 20%;
+    }
+    .cont-docentes{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        background-color: #fff;
+        margin: 0 0;
+        justify-content: center;
+        padding: 30px;
+        height: max-content;
+        align-items: center;
+    }
+    .docentes{
+        width: 50%;
+        border: 10px solid rgb(207, 46, 46);
+    }
+    .docentes img{
+        width:100%;
+        height: 550px;
+        padding: 0 10px;
+    }
+    .docentes2{
+        width: 50%;
+        border: 10px solid rgb(207, 46, 46);
+    }
+    .docentes2 img{
+        width: 100%;
+        height: 550px;
+        
+    }
+
+
+
+}
+
+
+
+
+
+
+
+
+
+/*RESPONSIVE FOOTER*/
+@media screen and (max-width:760px) {
+    .pie-pagina .grupo-1 {
+        width: 100%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 35px 0px;
+        text-align: center;
+
+    }
+
+    .ifrm {
+        margin-left: 30px;
+    }
+}

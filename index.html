@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <meta name="author" content="Nicolas Bobadilla">
+    <meta name="keywords" content="jardin, jardin carita feliz, jardin infantil">
+    <meta name="description" content="Jardin Carita Feliz">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./estilos/estilo.css">
+
+    <script defer src="index.js"></script>
+    <title>Carita Feliz</title>
+</head>
+
+<body>
+    <header class="mi-header">
+        <nav class="menu">
+            <a href="" id="logo" class="nav-link"><img src="./imagenes/carita-feliz.png" alt="logo carita feliz"></a>
+            <button class="nav-toggle" aria-label="Abrir Menú">
+                <img src="./imagenes/hamburger-icon.svg" alt="abrir menu">
+            </button>
+            <ul class="nav-menu nav-menu_visible">
+                <li class="nav-menu-item">
+                    <a href="index.html" class="nav-menu-link nav-link nav-menu-link_active"><svg
+                            xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                            class="bi bi-house-door-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5z">
+                            </path>
+                        </svg>INICIO</a>
+                </li>
+                <li class="nav-menu-item">
+                    <a href="nosotros.html" class="nav-menu-link nav-link nav-menu-link_active"><svg
+                            xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                            class="bi bi-person-circle" viewBox="0 0 16 16">
+                            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"></path>
+                            <path fill-rule="evenodd"
+                                d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z">
+                            </path>
+                        </svg>QUIENES SOMOS</a>
+                </li>
+                <li class="nav-menu-item container-submenu">
+                    <a href="#" class="nav-menu-link nav-link nav-menu-link_active submenu-btn"><svg
+                            xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-chevron-double-down" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M1.646 6.646a.5.5 0 0 1 .708 0L8 12.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                            <path fill-rule="evenodd"
+                                d="M1.646 2.646a.5.5 0 0 1 .708 0L8 8.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                        </svg>SALAS</a>
+                    <ul class="submenu">
+                        <li class="nav-menu-item">
+                            <a href="sala-azul.html" class="nav-menu-link nav-link sb">SALA
+                                AZUL</a>
+                        </li>
+                        <li class="nav-menu-item">
+                            <a href="/sala-verde.html" class="nav-menu-link nav-link sb">SALA VERDE</a>
+                        </li>
+                        <li class="nav-menu-item">
+                            <a href="" class="nav-menu-link nav-link sb">SALA ANARANJADA</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-menu-item">
+                    <a href="#contacto" class="nav-menu-link nav-link nav-menu-link_active"><svg
+                            xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z">
+                            </path>
+                        </svg>CONTACTO</a>
+                </li>
+
+            </ul>
+        </nav>
+    </header>
+
+
+    <div class="titulo">
+        <h2 id="titulo-pr">JARDIN DE INFANTES COMUNITARIO CARITA FELIZ</h2>
+        <p>"Que cada niño crezca feliz, como un testimonio del triunfo de la vida"</p>
+    </div>
+
+    <section>
+        <div class="cont-docentes">
+            <span class="docentes"><img src="./imagenes/docentes.jpg" alt="docentes"></span>
+            <span class="docentes2"><img src="./imagenes/docentes2.jpg" alt="docentes"></span>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+    <h3 class="title-proy">El Proyecto</h3>
+    <section class="cont-proyecto">
+        <div class="cont-img-proy">
+            <span>
+                <img src="https://cdn.pixabay.com/photo/2017/06/06/00/33/edit-icon-2375785_960_720.png" alt="icono lapiz">
+            </span>
+            <p><b>Orientación filosófica y pedagógica</b></p>
+            <p>Consideramos que la educación, en función de la autonomía personal, es un proceso en virtud del cual el
+                sujeto va adquiriendo progresivamente, la responsabilidad de su propia vida, hasta llegar a ser persona
+                independiente de los demás.
+
+                El aprendizaje tiene como punto de partida al propio niño en su condición de ser único e irrepetible y a
+                la vez, debe permitir el ejercicio responsable de la libertad, en tarea compartida dentro de esa
+                estructura socializante que es el grupo.</p>
+        </div>
+        <div class="cont-img-proy">
+            <span>
+                <img src="https://i0.wp.com/gfwinchester.com/wp-content/uploads/2021/02/I%CC%81cono-Residencial.png?fit=540%2C540&ssl=1"
+                    alt="icono casa">
+            </span>
+            <p><b>Nucleo familiar</b></p>
+            <p>Consideramos la importancia que posee la familia como primer agente educador y socializador del niño y
+                niña, es en ella donde se constituyen las bases de su formación valórica, modelos de conducta y formas
+                de interactuar con el mundo que la rodea.
+
+                Por tal motivo, nos interesa realizar una labor conjunta que oriente y apoye a los padres en los
+                diferentes aspectos del crecimiento de sus hijos, así como el compromiso de participar e involucrarse en
+                las diferentes actividades dentro y fuera del Jardín.</p>
+        </div>
+    </section>
+
+
+    <div class="caja-principal">
+        <div class="caja-1">
+            <p><span>Atendemos Durante Todo el Año</span></p>
+        </div>
+        <div class="caja-2">
+            <p><span>Jornada completa 8:00-17:00 hrs</span></p>
+        </div>
+        <div class="caja-3">
+            <p><b>Niveles</b></p>
+        </div>
+        <div class="cont-caja4">
+            <div class="caja-4">
+                <span class="img-niño"><img
+                        src="https://www.zumbayllu.cl/wp-content/uploads/2019/09/boy-broad-smile.png" alt="icono niño"></span>
+                <p><b>Nivel Medio Menor</b></p>
+                <p>3 a 4 años</p>
+            </div>
+
+            <div class="caja-4">
+                <span class="img-niño"><img src="https://www.zumbayllu.cl/wp-content/uploads/2019/09/smiling-girl.png"
+                        alt="icono niña"></span>
+                <p><b>Nivel Medio Mayor</b></p>
+                <p> 4 a 5 años</p>
+            </div>
+        </div>
+
+
+
+        <div class="actividades">
+            <h4>Actividades</h4>
+        </div>
+
+        <div class="cont-actividades">
+            <div class="cont-img-act">
+                <span>
+                    <img src="https://www.zumbayllu.cl/wp-content/uploads/2019/09/juegos.png" alt="icono talleres">
+                </span>
+                <p>Talleres indivudiales y con las familias</p>
+            </div>
+            <div class="cont-img-act">
+                <span>
+                    <img src="https://www.zumbayllu.cl/wp-content/uploads/2019/09/educacion_fisica.png" alt="icono ed fisica">
+                </span>
+                <p>Taller de Educacion Fisica</p>
+            </div>
+            <div class="cont-img-act">
+                <span>
+                    <img src="https://www.zumbayllu.cl/wp-content/uploads/2019/09/graduacion.png" alt="icono graduacion">
+                </span>
+                <p>Celebracion de Cumpleaños y graduacion de fin de año</p>
+            </div>
+        </div>
+
+
+
+
+        <div class="formulario">
+            <form action="index.html">
+                <h2>Contáctenos</h2>
+                <p>Envíe una consulta a través del formulario y nos contactaremos a la brevedad. Gracias</p>
+                <input type="text" name="nombre" placeholder="Nombre*">
+                <input type="email" name="correo" placeholder="Correo*">
+                <textarea name="mensaje" placeholder="Escrba aqui su consulta"></textarea>
+                <input type="button" value="Enviar" id="botton">
+            </form>
+        </div>
+
+
+
+        <footer class="pie-pagina">
+            <div class="grupo-1">
+                <div class="caja">
+                    <h2>NOS ENCONTRAMOS EN:</h2>
+                    <iframe class="ifrm"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d999.8810793690346!2d-58.62900367074389!3d-34.751595596883035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc5c846451597%3A0x24e5b41dce4c8a6b!2sJard%C3%ADn%20de%20infantes%20%22Carita%20Feliz%22!5e1!3m2!1ses!2sar!4v1656438344273!5m2!1ses!2sar"
+                        width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="caja">
+                    <a name="contacto"></a>
+                    <h2>CONTACTO</h2>
+                    <p>Telefono: <a class="mail" href="113254345"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+                            </svg> 11223344</a></p>
+                    <p>E-mail:<a class="mail" href=""> Carita feliz <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                                <path
+                                    d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z" />
+                            </svg> </a></p>
+                </div>
+                <div class="caja">
+                    <h2>REDES</h2>
+                    <div class="red-social">
+                        <a href="https://www.facebook.com/profile.php?id=1200690345" target="_blank"
+                            class="fa fa-facebook"><svg xmlns="http://www.w3.org/2000/svg" width="36" height="36"
+                                fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                                <path
+                                    d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+                            </svg></a>
+                        <a href="#" class="fa fa-instagram" target="_blank"><svg xmlns="http://www.w3.org/2000/svg"
+                                width="36" height="36" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+                            </svg></a>
+
+                    </div>
+                </div>
+            </div>
+            <div class="grupo-2">
+                <small>
+                    &copy; 2022 | <b>Nicolas</b> | Todos los Derechos Reservados.</small>
+            </div>
+
+
+
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>
